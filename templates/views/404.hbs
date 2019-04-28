@@ -5,13 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Oops - 404</title>
+  <link rel="icon" href="img/weather.png" />
   <link rel="stylesheet" href="css/styles.css" />
-  <title>Help</title>
 </head>
 
 <body>
-  <h1>{{title}}</h1>
-  <p>{{helpText}}</p>
+  <div class="main-content">
+    {{>header}}
+    <p>{{errorMessage}}</p>
+  </div>
+  {{>footer}}
 </body>
 
 </html>
